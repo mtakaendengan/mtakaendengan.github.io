@@ -1,0 +1,43 @@
+<span id="a">terminal</span>:<span id="b">~</span><span id="c">$</span> cd mtakaendengan.github.io/<!-- kjsdfhkjdhsfkjdshfkj -->pp21/uas.html
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+Selamat datang di minggu Ujian Akhir Semester <!-- kjsdfhkjdhsfkjdshfkj --> <span id="b">Pengantar Pemrograman Sistem Informasi 21.</span>
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<p> Ujian akhir semester ini, kalian akan membuat suatu Project Akhir menggunakkan Python <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+1. Project yang akan kalian buat adalah membuat satu program besar yang berisi beberapa program/sub-program dari anggota kelompok kalian. <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+2. Program besar yang dimaksud merupakan kumpulan dari sub-program dan berbentuk menu pilihan. <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+3. Masing-masing dari anggota kelompok akan mengerjakan sub-program nya masing-masing kemudian dikumpulkan pada ketua kelompok untuk digabungkan menjadi satu program besar. <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+4. Ketua kelompok ditentukan oleh kelompok masing-masing. <!-- laglaglaglaglaglaglaglaglaglaglaglag --> <br>
+5. Sub-program bertema bebas, lebih diharapkan untuk memilih tema sub-program selain dari bangun ruang, rumus trigonometri atau contoh yang sudah dipelajari. <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+6. Output program ditampilkan menggunakkan CLI maupun GUI<!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+7. Silahkan dibuat semenarik mungkin. <!-- laglaglaglaglaglaglaglaglaglaglaglag --> 
+</p>
+<p> Contoh tampilan program (pada CLI): <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+-----------------
+| Final Project <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+-----------------
+| Kelompok X <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+-----------------
+| 1. Program Perhintungan Perpotongan Garis Lurus
+| 2. 
+| 3.
+| 4.
+| 5. Anggota Kelompok
+| 6. Keluar program
+|
+| Masukkan pilihan: ... <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+</p>
+
+<p> <span id="c">HINT:</span>
+*Pembuatan menu dapat menggunakkan Decision(if-else)/Looping(for/while) <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+*Sub-program yang dibuat dapat menggunakkan fungsi-fungsi yang sudah ada maupun dibuat sendiri <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+*Sub-program dapat ditulis dalam satu file program utama maupun pada file terpisah dengan cara call menggunakkan fungsi <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+*Silahkan saling membantu pengerjaan program/sub-program antar kelompok maupun antar anggota dalam kelompok.    <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+*Jangan sungkan bertanya kalau terdapat kesulitan
+</p>
+
+Batas waktu presentasi mengikuti tanggal terakhir UAS.
+Waktu dan media presentasi, kalian yang tentukan.
+Jika sudah menyelesaikan programnya dan ingin melakukan presentasi, silahkan hubungi di <a href=https://wa.me/6285155484588>sini ya!</a>
+<p>Good luck, have fun!</p>
+<p>:)</p>

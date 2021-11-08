@@ -1,0 +1,27 @@
+<span id="a">terminal</span>:<span id="b">~</span><span id="c">$</span> cd mtakaendengan.github.io/<!-- kjsdfhkjdhsfkjdshfkj -->ap21/uas.html
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+Selamat datang di minggu Ujian Akhir Semester <!-- kjsdfhkjdhsfkjdshfkj --> <span id="b">Algoritma dan Pemrograman Matematika 21.</span>
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+<p> Ujian akhir semester ini, kalian akan membuat suatu Project Akhir menggunakkan Python <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+1. Project yang akan kalian buat adalah membuat satu program besar yang berisi beberapa program/sub-program dari anggota kelompok kalian. <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+2. Program besar yang dimaksud merupakan kumpulan dari sub-program dan berbentuk menu pilihan. <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+3. Masing-masing dari anggota kelompok akan mengerjakan sub-program nya masing-masing kemudian dikumpulkan pada ketua kelompok untuk digabungkan menjadi satu program besar. <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+4. Sub-program bertema bebas, lebih diharapkan untuk memilih tema sub-program selain dari bangun ruang, rumus trigonometri atau contoh yang sudah dipelajari. <!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+5. Output program ditampilkan menggunakkan CLI maupun GUI<!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
+</p>
+<p> Contoh program:
+---------------------
+|---Final Project---|
+---------------------
+|-----Kelompok 1----|
+</p>
+
+<p> <span id="c">HINT:</span>
+*Pembuatan menu dapat menggunakkan Decision(if-else)/Looping(for/while)
+*
+</p>
+
+Jika sudah menyelesaikan programnya dan ingin melakukan presentasi, silahkan hubungi saya di <a href=https://wa.me/6285155484588>sini</a>
+<p>Good luck, have fun!</p>
+<p>:)</p>
