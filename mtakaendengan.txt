@@ -4,6 +4,6 @@ Silahkan klik link di bawah ini untuk mengakses kelas kalian: <!-- laglaglaglagl
 1. <a href="/pp21/pp21.html">Pengantar Pemrograman - Sistem Informasi 21</a><!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
 2. <a href="/ap21/ap21.html">Algoritma dan Pemrograman - Matematika 21</a><!-- laglaglaglaglaglaglaglaglaglaglaglag --><br>
 
-You can also give your email ID for contacting you<!-- slightdelayhere-->, feel free to send me an email at <!-- longlonglongcomment --><a href="Your email ID">Email</a>.
+Jika ada yang ingin ditanyakan atau di diskusikan<!-- slightdelayhere-->, kontak <!-- longlonglongcomment --><a href=https://wa.me/6285155484588>disini</a> ya :)
 
 <p>Cheers!</p>
