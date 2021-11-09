@@ -36,6 +36,8 @@ Selamat datang di minggu Ujian Akhir Semester <!-- kjsdfhkjdhsfkjdshfkj --> <spa
 *Jangan sungkan bertanya kalau terdapat kesulitan atau masih bingung dengan penjelasannya.
 <br>
 <span id="c">NB:</span> <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+<span id="b">CLI</span> yang dimaksud adalah <span id="b">tampilan standar pada IDLE</span><!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+<span id="b">GUI</span> yang dimaksud adalah <span id="b">menggunakkan fungsi TKINTER</span><!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 Batas waktu presentasi mengikuti tanggal terakhir UAS. <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 Waktu dan media presentasi, kalian yang tentukan. <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 Jika sudah menyelesaikan programnya dan ingin melakukan presentasi, silahkan hubungi di <a href=https://wa.me/6285155484588>sini ya!</a> <!-- laglaglaglaglaglaglaglaglaglaglaglag -->
