@@ -39,36 +39,36 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/BATAS_KAB_MINAHASA_7.js"></script>
-        <script src="data/JALAN_MINAHASA_8.js"></script>
-        <script src="data/KONTUR_MINAHASA_9.js"></script>
-        <script src="data/SUNGAI_MINAHASA_10.js"></script>
-        <script src="data/BATAS_KAB_MINSEL_11.js"></script>
-        <script src="data/JALAN_MINSEL_12.js"></script>
-        <script src="data/KONTUR_MINSEL_13.js"></script>
-        <script src="data/SUNGAI_MINSEL_14.js"></script>
-        <script src="data/BATAS_KAB_MITRA_15.js"></script>
-        <script src="data/JALAN_MITRA_16.js"></script>
-        <script src="data/KONTUR_MITRA_17.js"></script>
-        <script src="data/SUNGA_MITRA_18.js"></script>
-        <script src="data/Track1_19.js"></script>
-        <script src="data/StartingPoint_20.js"></script>
-        <script src="data/RegistrationPoint_21.js"></script>
-        <script src="data/MataAir_22.js"></script>
-        <script src="data/CampGround1_23.js"></script>
-        <script src="data/Track2_24.js"></script>
-        <script src="data/PosBayangan1_25.js"></script>
-        <script src="data/SpotView1_26.js"></script>
-        <script src="data/SpotView2_27.js"></script>
-        <script src="data/TitikPanorama1_28.js"></script>
-        <script src="data/PosBayangan2_29.js"></script>
-        <script src="data/PosBayangan3_30.js"></script>
-        <script src="data/SpotView3_31.js"></script>
-        <script src="data/KawahTua_32.js"></script>
-        <script src="data/KawahLama_33.js"></script>
-        <script src="data/PanoramicPoint2_34.js"></script>
-        <script src="data/PanoramaPuncakAnakGnSoputan_35.js"></script>
-        <script src="data/PuncakAnakGnSoputan_36.js"></script>
+        <script src="data/BATAS_KAB_MINAHASA_0.js"></script>
+        <script src="data/JALAN_MINAHASA_1.js"></script>
+        <script src="data/KONTUR_MINAHASA_2.js"></script>
+        <script src="data/SUNGAI_MINAHASA_3.js"></script>
+        <script src="data/BATAS_KAB_MINSEL_4.js"></script>
+        <script src="data/JALAN_MINSEL_5.js"></script>
+        <script src="data/KONTUR_MINSEL_6.js"></script>
+        <script src="data/SUNGAI_MINSEL_7.js"></script>
+        <script src="data/BATAS_KAB_MITRA_8.js"></script>
+        <script src="data/JALAN_MITRA_9.js"></script>
+        <script src="data/KONTUR_MITRA_10.js"></script>
+        <script src="data/SUNGA_MITRA_11.js"></script>
+        <script src="data/Track1_12.js"></script>
+        <script src="data/StartingPoint_13.js"></script>
+        <script src="data/RegistrationPoint_14.js"></script>
+        <script src="data/MataAir_15.js"></script>
+        <script src="data/CampGround1_16.js"></script>
+        <script src="data/Track2_17.js"></script>
+        <script src="data/PosBayangan1_18.js"></script>
+        <script src="data/SpotView1_19.js"></script>
+        <script src="data/SpotView2_20.js"></script>
+        <script src="data/TitikPanorama1_21.js"></script>
+        <script src="data/PosBayangan2_22.js"></script>
+        <script src="data/PosBayangan3_23.js"></script>
+        <script src="data/SpotView3_24.js"></script>
+        <script src="data/KawahTua_25.js"></script>
+        <script src="data/KawahLama_26.js"></script>
+        <script src="data/PanoramicPoint2_27.js"></script>
+        <script src="data/PanoramaPuncakAnakGnSoputan_28.js"></script>
+        <script src="data/PuncakAnakGnSoputan_29.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -114,90 +114,7 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        map.createPane('pane_OpenTopoMap_0');
-        map.getPane('pane_OpenTopoMap_0').style.zIndex = 400;
-        var layer_OpenTopoMap_0 = L.tileLayer('https://tile.opentopomap.org/{z}/{x}/{y}.png', {
-            pane: 'pane_OpenTopoMap_0',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 0,
-            maxNativeZoom: 18
-        });
-        layer_OpenTopoMap_0;
-        map.addLayer(layer_OpenTopoMap_0);
-        map.createPane('pane_OpenStreetMap_1');
-        map.getPane('pane_OpenStreetMap_1').style.zIndex = 401;
-        var layer_OpenStreetMap_1 = L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            pane: 'pane_OpenStreetMap_1',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 0,
-            maxNativeZoom: 19
-        });
-        layer_OpenStreetMap_1;
-        map.addLayer(layer_OpenStreetMap_1);
-        map.createPane('pane_EsriImagery_2');
-        map.getPane('pane_EsriImagery_2').style.zIndex = 402;
-        var layer_EsriImagery_2 = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            pane: 'pane_EsriImagery_2',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-        });
-        layer_EsriImagery_2;
-        map.addLayer(layer_EsriImagery_2);
-        map.createPane('pane_EsriTopographic_3');
-        map.getPane('pane_EsriTopographic_3').style.zIndex = 403;
-        var layer_EsriTopographic_3 = L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-            pane: 'pane_EsriTopographic_3',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-        });
-        layer_EsriTopographic_3;
-        map.addLayer(layer_EsriTopographic_3);
-        map.createPane('pane_GoogleSatellite_4');
-        map.getPane('pane_GoogleSatellite_4').style.zIndex = 404;
-        var layer_GoogleSatellite_4 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-            pane: 'pane_GoogleSatellite_4',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-        });
-        layer_GoogleSatellite_4;
-        map.addLayer(layer_GoogleSatellite_4);
-        map.createPane('pane_GoogleTerrain_5');
-        map.getPane('pane_GoogleTerrain_5').style.zIndex = 405;
-        var layer_GoogleTerrain_5 = L.tileLayer('https://mt0.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
-            pane: 'pane_GoogleTerrain_5',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-            minNativeZoom: 0,
-            maxNativeZoom: 20
-        });
-        layer_GoogleTerrain_5;
-        map.addLayer(layer_GoogleTerrain_5);
-        map.createPane('pane_GoogleMaps_6');
-        map.getPane('pane_GoogleMaps_6').style.zIndex = 406;
-        var layer_GoogleMaps_6 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-            pane: 'pane_GoogleMaps_6',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
-        });
-        layer_GoogleMaps_6;
-        map.addLayer(layer_GoogleMaps_6);
-        function pop_BATAS_KAB_MINAHASA_7(feature, layer) {
+        function pop_BATAS_KAB_MINAHASA_0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">REMARK</th>\
@@ -223,9 +140,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_BATAS_KAB_MINAHASA_7_0() {
+        function style_BATAS_KAB_MINAHASA_0_0() {
             return {
-                pane: 'pane_BATAS_KAB_MINAHASA_7',
+                pane: 'pane_BATAS_KAB_MINAHASA_0',
                 opacity: 1,
                 color: 'rgba(219,30,42,1.0)',
                 dashArray: '',
@@ -233,24 +150,24 @@
                 lineJoin: 'round',
                 weight: 3.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_BATAS_KAB_MINAHASA_7');
-        map.getPane('pane_BATAS_KAB_MINAHASA_7').style.zIndex = 407;
-        map.getPane('pane_BATAS_KAB_MINAHASA_7').style['mix-blend-mode'] = 'normal';
-        var layer_BATAS_KAB_MINAHASA_7 = new L.geoJson(json_BATAS_KAB_MINAHASA_7, {
+        map.createPane('pane_BATAS_KAB_MINAHASA_0');
+        map.getPane('pane_BATAS_KAB_MINAHASA_0').style.zIndex = 400;
+        map.getPane('pane_BATAS_KAB_MINAHASA_0').style['mix-blend-mode'] = 'normal';
+        var layer_BATAS_KAB_MINAHASA_0 = new L.geoJson(json_BATAS_KAB_MINAHASA_0, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_BATAS_KAB_MINAHASA_7',
-            layerName: 'layer_BATAS_KAB_MINAHASA_7',
-            pane: 'pane_BATAS_KAB_MINAHASA_7',
-            onEachFeature: pop_BATAS_KAB_MINAHASA_7,
-            style: style_BATAS_KAB_MINAHASA_7_0,
+            interactive: false,
+            dataVar: 'json_BATAS_KAB_MINAHASA_0',
+            layerName: 'layer_BATAS_KAB_MINAHASA_0',
+            pane: 'pane_BATAS_KAB_MINAHASA_0',
+            onEachFeature: pop_BATAS_KAB_MINAHASA_0,
+            style: style_BATAS_KAB_MINAHASA_0_0,
         });
-        bounds_group.addLayer(layer_BATAS_KAB_MINAHASA_7);
-        map.addLayer(layer_BATAS_KAB_MINAHASA_7);
-        function pop_JALAN_MINAHASA_8(feature, layer) {
+        bounds_group.addLayer(layer_BATAS_KAB_MINAHASA_0);
+        map.addLayer(layer_BATAS_KAB_MINAHASA_0);
+        function pop_JALAN_MINAHASA_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['NAMRJL'] !== null ? autolinker.link(feature.properties['NAMRJL'].toLocaleString()) : '') + '</td>\
@@ -329,9 +246,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_JALAN_MINAHASA_8_0() {
+        function style_JALAN_MINAHASA_1_0() {
             return {
-                pane: 'pane_JALAN_MINAHASA_8',
+                pane: 'pane_JALAN_MINAHASA_1',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -339,24 +256,24 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_JALAN_MINAHASA_8');
-        map.getPane('pane_JALAN_MINAHASA_8').style.zIndex = 408;
-        map.getPane('pane_JALAN_MINAHASA_8').style['mix-blend-mode'] = 'normal';
-        var layer_JALAN_MINAHASA_8 = new L.geoJson(json_JALAN_MINAHASA_8, {
+        map.createPane('pane_JALAN_MINAHASA_1');
+        map.getPane('pane_JALAN_MINAHASA_1').style.zIndex = 401;
+        map.getPane('pane_JALAN_MINAHASA_1').style['mix-blend-mode'] = 'normal';
+        var layer_JALAN_MINAHASA_1 = new L.geoJson(json_JALAN_MINAHASA_1, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_JALAN_MINAHASA_8',
-            layerName: 'layer_JALAN_MINAHASA_8',
-            pane: 'pane_JALAN_MINAHASA_8',
-            onEachFeature: pop_JALAN_MINAHASA_8,
-            style: style_JALAN_MINAHASA_8_0,
+            interactive: false,
+            dataVar: 'json_JALAN_MINAHASA_1',
+            layerName: 'layer_JALAN_MINAHASA_1',
+            pane: 'pane_JALAN_MINAHASA_1',
+            onEachFeature: pop_JALAN_MINAHASA_1,
+            style: style_JALAN_MINAHASA_1_0,
         });
-        bounds_group.addLayer(layer_JALAN_MINAHASA_8);
-        map.addLayer(layer_JALAN_MINAHASA_8);
-        function pop_KONTUR_MINAHASA_9(feature, layer) {
+        bounds_group.addLayer(layer_JALAN_MINAHASA_1);
+        map.addLayer(layer_JALAN_MINAHASA_1);
+        function pop_KONTUR_MINAHASA_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
@@ -399,9 +316,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_KONTUR_MINAHASA_9_0() {
+        function style_KONTUR_MINAHASA_2_0() {
             return {
-                pane: 'pane_KONTUR_MINAHASA_9',
+                pane: 'pane_KONTUR_MINAHASA_2',
                 opacity: 1,
                 color: 'rgba(247,128,30,1.0)',
                 dashArray: '',
@@ -409,27 +326,27 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_KONTUR_MINAHASA_9');
-        map.getPane('pane_KONTUR_MINAHASA_9').style.zIndex = 409;
-        map.getPane('pane_KONTUR_MINAHASA_9').style['mix-blend-mode'] = 'normal';
-        var layer_KONTUR_MINAHASA_9 = new L.geoJson(json_KONTUR_MINAHASA_9, {
+        map.createPane('pane_KONTUR_MINAHASA_2');
+        map.getPane('pane_KONTUR_MINAHASA_2').style.zIndex = 402;
+        map.getPane('pane_KONTUR_MINAHASA_2').style['mix-blend-mode'] = 'normal';
+        var layer_KONTUR_MINAHASA_2 = new L.geoJson(json_KONTUR_MINAHASA_2, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_KONTUR_MINAHASA_9',
-            layerName: 'layer_KONTUR_MINAHASA_9',
-            pane: 'pane_KONTUR_MINAHASA_9',
-            onEachFeature: pop_KONTUR_MINAHASA_9,
-            style: style_KONTUR_MINAHASA_9_0,
+            interactive: false,
+            dataVar: 'json_KONTUR_MINAHASA_2',
+            layerName: 'layer_KONTUR_MINAHASA_2',
+            pane: 'pane_KONTUR_MINAHASA_2',
+            onEachFeature: pop_KONTUR_MINAHASA_2,
+            style: style_KONTUR_MINAHASA_2_0,
         });
-        bounds_group.addLayer(layer_KONTUR_MINAHASA_9);
-        map.addLayer(layer_KONTUR_MINAHASA_9);
-        function pop_SUNGAI_MINAHASA_10(feature, layer) {
+        bounds_group.addLayer(layer_KONTUR_MINAHASA_2);
+        map.addLayer(layer_KONTUR_MINAHASA_2);
+        function pop_SUNGAI_MINAHASA_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
+                        <td class="visible-with-data" id="NAMOBJ"colspan="2"><strong>NAMOBJ</strong><br />' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['TIPSNG'] !== null ? autolinker.link(feature.properties['TIPSNG'].toLocaleString()) : '') + '</td>\
@@ -481,9 +398,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_SUNGAI_MINAHASA_10_0() {
+        function style_SUNGAI_MINAHASA_3_0() {
             return {
-                pane: 'pane_SUNGAI_MINAHASA_10',
+                pane: 'pane_SUNGAI_MINAHASA_3',
                 opacity: 1,
                 color: 'rgba(72,123,182,1.0)',
                 dashArray: '',
@@ -491,24 +408,24 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_SUNGAI_MINAHASA_10');
-        map.getPane('pane_SUNGAI_MINAHASA_10').style.zIndex = 410;
-        map.getPane('pane_SUNGAI_MINAHASA_10').style['mix-blend-mode'] = 'normal';
-        var layer_SUNGAI_MINAHASA_10 = new L.geoJson(json_SUNGAI_MINAHASA_10, {
+        map.createPane('pane_SUNGAI_MINAHASA_3');
+        map.getPane('pane_SUNGAI_MINAHASA_3').style.zIndex = 403;
+        map.getPane('pane_SUNGAI_MINAHASA_3').style['mix-blend-mode'] = 'normal';
+        var layer_SUNGAI_MINAHASA_3 = new L.geoJson(json_SUNGAI_MINAHASA_3, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_SUNGAI_MINAHASA_10',
-            layerName: 'layer_SUNGAI_MINAHASA_10',
-            pane: 'pane_SUNGAI_MINAHASA_10',
-            onEachFeature: pop_SUNGAI_MINAHASA_10,
-            style: style_SUNGAI_MINAHASA_10_0,
+            interactive: false,
+            dataVar: 'json_SUNGAI_MINAHASA_3',
+            layerName: 'layer_SUNGAI_MINAHASA_3',
+            pane: 'pane_SUNGAI_MINAHASA_3',
+            onEachFeature: pop_SUNGAI_MINAHASA_3,
+            style: style_SUNGAI_MINAHASA_3_0,
         });
-        bounds_group.addLayer(layer_SUNGAI_MINAHASA_10);
-        map.addLayer(layer_SUNGAI_MINAHASA_10);
-        function pop_BATAS_KAB_MINSEL_11(feature, layer) {
+        bounds_group.addLayer(layer_SUNGAI_MINAHASA_3);
+        map.addLayer(layer_SUNGAI_MINAHASA_3);
+        function pop_BATAS_KAB_MINSEL_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['KARKTR'] !== null ? autolinker.link(feature.properties['KARKTR'].toLocaleString()) : '') + '</td>\
@@ -596,9 +513,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_BATAS_KAB_MINSEL_11_0() {
+        function style_BATAS_KAB_MINSEL_4_0() {
             return {
-                pane: 'pane_BATAS_KAB_MINSEL_11',
+                pane: 'pane_BATAS_KAB_MINSEL_4',
                 opacity: 1,
                 color: 'rgba(219,30,42,1.0)',
                 dashArray: '',
@@ -606,24 +523,24 @@
                 lineJoin: 'round',
                 weight: 3.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_BATAS_KAB_MINSEL_11');
-        map.getPane('pane_BATAS_KAB_MINSEL_11').style.zIndex = 411;
-        map.getPane('pane_BATAS_KAB_MINSEL_11').style['mix-blend-mode'] = 'normal';
-        var layer_BATAS_KAB_MINSEL_11 = new L.geoJson(json_BATAS_KAB_MINSEL_11, {
+        map.createPane('pane_BATAS_KAB_MINSEL_4');
+        map.getPane('pane_BATAS_KAB_MINSEL_4').style.zIndex = 404;
+        map.getPane('pane_BATAS_KAB_MINSEL_4').style['mix-blend-mode'] = 'normal';
+        var layer_BATAS_KAB_MINSEL_4 = new L.geoJson(json_BATAS_KAB_MINSEL_4, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_BATAS_KAB_MINSEL_11',
-            layerName: 'layer_BATAS_KAB_MINSEL_11',
-            pane: 'pane_BATAS_KAB_MINSEL_11',
-            onEachFeature: pop_BATAS_KAB_MINSEL_11,
-            style: style_BATAS_KAB_MINSEL_11_0,
+            interactive: false,
+            dataVar: 'json_BATAS_KAB_MINSEL_4',
+            layerName: 'layer_BATAS_KAB_MINSEL_4',
+            pane: 'pane_BATAS_KAB_MINSEL_4',
+            onEachFeature: pop_BATAS_KAB_MINSEL_4,
+            style: style_BATAS_KAB_MINSEL_4_0,
         });
-        bounds_group.addLayer(layer_BATAS_KAB_MINSEL_11);
-        map.addLayer(layer_BATAS_KAB_MINSEL_11);
-        function pop_JALAN_MINSEL_12(feature, layer) {
+        bounds_group.addLayer(layer_BATAS_KAB_MINSEL_4);
+        map.addLayer(layer_BATAS_KAB_MINSEL_4);
+        function pop_JALAN_MINSEL_5(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['NAMRJL'] !== null ? autolinker.link(feature.properties['NAMRJL'].toLocaleString()) : '') + '</td>\
@@ -702,9 +619,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_JALAN_MINSEL_12_0() {
+        function style_JALAN_MINSEL_5_0() {
             return {
-                pane: 'pane_JALAN_MINSEL_12',
+                pane: 'pane_JALAN_MINSEL_5',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -712,24 +629,24 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_JALAN_MINSEL_12');
-        map.getPane('pane_JALAN_MINSEL_12').style.zIndex = 412;
-        map.getPane('pane_JALAN_MINSEL_12').style['mix-blend-mode'] = 'normal';
-        var layer_JALAN_MINSEL_12 = new L.geoJson(json_JALAN_MINSEL_12, {
+        map.createPane('pane_JALAN_MINSEL_5');
+        map.getPane('pane_JALAN_MINSEL_5').style.zIndex = 405;
+        map.getPane('pane_JALAN_MINSEL_5').style['mix-blend-mode'] = 'normal';
+        var layer_JALAN_MINSEL_5 = new L.geoJson(json_JALAN_MINSEL_5, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_JALAN_MINSEL_12',
-            layerName: 'layer_JALAN_MINSEL_12',
-            pane: 'pane_JALAN_MINSEL_12',
-            onEachFeature: pop_JALAN_MINSEL_12,
-            style: style_JALAN_MINSEL_12_0,
+            interactive: false,
+            dataVar: 'json_JALAN_MINSEL_5',
+            layerName: 'layer_JALAN_MINSEL_5',
+            pane: 'pane_JALAN_MINSEL_5',
+            onEachFeature: pop_JALAN_MINSEL_5,
+            style: style_JALAN_MINSEL_5_0,
         });
-        bounds_group.addLayer(layer_JALAN_MINSEL_12);
-        map.addLayer(layer_JALAN_MINSEL_12);
-        function pop_KONTUR_MINSEL_13(feature, layer) {
+        bounds_group.addLayer(layer_JALAN_MINSEL_5);
+        map.addLayer(layer_JALAN_MINSEL_5);
+        function pop_KONTUR_MINSEL_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
@@ -772,9 +689,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_KONTUR_MINSEL_13_0() {
+        function style_KONTUR_MINSEL_6_0() {
             return {
-                pane: 'pane_KONTUR_MINSEL_13',
+                pane: 'pane_KONTUR_MINSEL_6',
                 opacity: 1,
                 color: 'rgba(247,128,30,1.0)',
                 dashArray: '',
@@ -782,24 +699,24 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_KONTUR_MINSEL_13');
-        map.getPane('pane_KONTUR_MINSEL_13').style.zIndex = 413;
-        map.getPane('pane_KONTUR_MINSEL_13').style['mix-blend-mode'] = 'normal';
-        var layer_KONTUR_MINSEL_13 = new L.geoJson(json_KONTUR_MINSEL_13, {
+        map.createPane('pane_KONTUR_MINSEL_6');
+        map.getPane('pane_KONTUR_MINSEL_6').style.zIndex = 406;
+        map.getPane('pane_KONTUR_MINSEL_6').style['mix-blend-mode'] = 'normal';
+        var layer_KONTUR_MINSEL_6 = new L.geoJson(json_KONTUR_MINSEL_6, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_KONTUR_MINSEL_13',
-            layerName: 'layer_KONTUR_MINSEL_13',
-            pane: 'pane_KONTUR_MINSEL_13',
-            onEachFeature: pop_KONTUR_MINSEL_13,
-            style: style_KONTUR_MINSEL_13_0,
+            interactive: false,
+            dataVar: 'json_KONTUR_MINSEL_6',
+            layerName: 'layer_KONTUR_MINSEL_6',
+            pane: 'pane_KONTUR_MINSEL_6',
+            onEachFeature: pop_KONTUR_MINSEL_6,
+            style: style_KONTUR_MINSEL_6_0,
         });
-        bounds_group.addLayer(layer_KONTUR_MINSEL_13);
-        map.addLayer(layer_KONTUR_MINSEL_13);
-        function pop_SUNGAI_MINSEL_14(feature, layer) {
+        bounds_group.addLayer(layer_KONTUR_MINSEL_6);
+        map.addLayer(layer_KONTUR_MINSEL_6);
+        function pop_SUNGAI_MINSEL_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
@@ -854,9 +771,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_SUNGAI_MINSEL_14_0() {
+        function style_SUNGAI_MINSEL_7_0() {
             return {
-                pane: 'pane_SUNGAI_MINSEL_14',
+                pane: 'pane_SUNGAI_MINSEL_7',
                 opacity: 1,
                 color: 'rgba(31,120,180,1.0)',
                 dashArray: '',
@@ -864,24 +781,24 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_SUNGAI_MINSEL_14');
-        map.getPane('pane_SUNGAI_MINSEL_14').style.zIndex = 414;
-        map.getPane('pane_SUNGAI_MINSEL_14').style['mix-blend-mode'] = 'normal';
-        var layer_SUNGAI_MINSEL_14 = new L.geoJson(json_SUNGAI_MINSEL_14, {
+        map.createPane('pane_SUNGAI_MINSEL_7');
+        map.getPane('pane_SUNGAI_MINSEL_7').style.zIndex = 407;
+        map.getPane('pane_SUNGAI_MINSEL_7').style['mix-blend-mode'] = 'normal';
+        var layer_SUNGAI_MINSEL_7 = new L.geoJson(json_SUNGAI_MINSEL_7, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_SUNGAI_MINSEL_14',
-            layerName: 'layer_SUNGAI_MINSEL_14',
-            pane: 'pane_SUNGAI_MINSEL_14',
-            onEachFeature: pop_SUNGAI_MINSEL_14,
-            style: style_SUNGAI_MINSEL_14_0,
+            interactive: false,
+            dataVar: 'json_SUNGAI_MINSEL_7',
+            layerName: 'layer_SUNGAI_MINSEL_7',
+            pane: 'pane_SUNGAI_MINSEL_7',
+            onEachFeature: pop_SUNGAI_MINSEL_7,
+            style: style_SUNGAI_MINSEL_7_0,
         });
-        bounds_group.addLayer(layer_SUNGAI_MINSEL_14);
-        map.addLayer(layer_SUNGAI_MINSEL_14);
-        function pop_BATAS_KAB_MITRA_15(feature, layer) {
+        bounds_group.addLayer(layer_SUNGAI_MINSEL_7);
+        map.addLayer(layer_SUNGAI_MINSEL_7);
+        function pop_BATAS_KAB_MITRA_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['KARKTR'] !== null ? autolinker.link(feature.properties['KARKTR'].toLocaleString()) : '') + '</td>\
@@ -969,9 +886,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_BATAS_KAB_MITRA_15_0() {
+        function style_BATAS_KAB_MITRA_8_0() {
             return {
-                pane: 'pane_BATAS_KAB_MITRA_15',
+                pane: 'pane_BATAS_KAB_MITRA_8',
                 opacity: 1,
                 color: 'rgba(219,30,42,1.0)',
                 dashArray: '',
@@ -979,24 +896,24 @@
                 lineJoin: 'round',
                 weight: 3.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_BATAS_KAB_MITRA_15');
-        map.getPane('pane_BATAS_KAB_MITRA_15').style.zIndex = 415;
-        map.getPane('pane_BATAS_KAB_MITRA_15').style['mix-blend-mode'] = 'normal';
-        var layer_BATAS_KAB_MITRA_15 = new L.geoJson(json_BATAS_KAB_MITRA_15, {
+        map.createPane('pane_BATAS_KAB_MITRA_8');
+        map.getPane('pane_BATAS_KAB_MITRA_8').style.zIndex = 408;
+        map.getPane('pane_BATAS_KAB_MITRA_8').style['mix-blend-mode'] = 'normal';
+        var layer_BATAS_KAB_MITRA_8 = new L.geoJson(json_BATAS_KAB_MITRA_8, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_BATAS_KAB_MITRA_15',
-            layerName: 'layer_BATAS_KAB_MITRA_15',
-            pane: 'pane_BATAS_KAB_MITRA_15',
-            onEachFeature: pop_BATAS_KAB_MITRA_15,
-            style: style_BATAS_KAB_MITRA_15_0,
+            interactive: false,
+            dataVar: 'json_BATAS_KAB_MITRA_8',
+            layerName: 'layer_BATAS_KAB_MITRA_8',
+            pane: 'pane_BATAS_KAB_MITRA_8',
+            onEachFeature: pop_BATAS_KAB_MITRA_8,
+            style: style_BATAS_KAB_MITRA_8_0,
         });
-        bounds_group.addLayer(layer_BATAS_KAB_MITRA_15);
-        map.addLayer(layer_BATAS_KAB_MITRA_15);
-        function pop_JALAN_MITRA_16(feature, layer) {
+        bounds_group.addLayer(layer_BATAS_KAB_MITRA_8);
+        map.addLayer(layer_BATAS_KAB_MITRA_8);
+        function pop_JALAN_MITRA_9(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['NAMRJL'] !== null ? autolinker.link(feature.properties['NAMRJL'].toLocaleString()) : '') + '</td>\
@@ -1075,9 +992,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_JALAN_MITRA_16_0() {
+        function style_JALAN_MITRA_9_0() {
             return {
-                pane: 'pane_JALAN_MITRA_16',
+                pane: 'pane_JALAN_MITRA_9',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -1085,24 +1002,24 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_JALAN_MITRA_16');
-        map.getPane('pane_JALAN_MITRA_16').style.zIndex = 416;
-        map.getPane('pane_JALAN_MITRA_16').style['mix-blend-mode'] = 'normal';
-        var layer_JALAN_MITRA_16 = new L.geoJson(json_JALAN_MITRA_16, {
+        map.createPane('pane_JALAN_MITRA_9');
+        map.getPane('pane_JALAN_MITRA_9').style.zIndex = 409;
+        map.getPane('pane_JALAN_MITRA_9').style['mix-blend-mode'] = 'normal';
+        var layer_JALAN_MITRA_9 = new L.geoJson(json_JALAN_MITRA_9, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_JALAN_MITRA_16',
-            layerName: 'layer_JALAN_MITRA_16',
-            pane: 'pane_JALAN_MITRA_16',
-            onEachFeature: pop_JALAN_MITRA_16,
-            style: style_JALAN_MITRA_16_0,
+            interactive: false,
+            dataVar: 'json_JALAN_MITRA_9',
+            layerName: 'layer_JALAN_MITRA_9',
+            pane: 'pane_JALAN_MITRA_9',
+            onEachFeature: pop_JALAN_MITRA_9,
+            style: style_JALAN_MITRA_9_0,
         });
-        bounds_group.addLayer(layer_JALAN_MITRA_16);
-        map.addLayer(layer_JALAN_MITRA_16);
-        function pop_KONTUR_MITRA_17(feature, layer) {
+        bounds_group.addLayer(layer_JALAN_MITRA_9);
+        map.addLayer(layer_JALAN_MITRA_9);
+        function pop_KONTUR_MITRA_10(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
@@ -1145,9 +1062,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_KONTUR_MITRA_17_0() {
+        function style_KONTUR_MITRA_10_0() {
             return {
-                pane: 'pane_KONTUR_MITRA_17',
+                pane: 'pane_KONTUR_MITRA_10',
                 opacity: 1,
                 color: 'rgba(247,128,30,1.0)',
                 dashArray: '',
@@ -1155,24 +1072,24 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_KONTUR_MITRA_17');
-        map.getPane('pane_KONTUR_MITRA_17').style.zIndex = 417;
-        map.getPane('pane_KONTUR_MITRA_17').style['mix-blend-mode'] = 'normal';
-        var layer_KONTUR_MITRA_17 = new L.geoJson(json_KONTUR_MITRA_17, {
+        map.createPane('pane_KONTUR_MITRA_10');
+        map.getPane('pane_KONTUR_MITRA_10').style.zIndex = 410;
+        map.getPane('pane_KONTUR_MITRA_10').style['mix-blend-mode'] = 'normal';
+        var layer_KONTUR_MITRA_10 = new L.geoJson(json_KONTUR_MITRA_10, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_KONTUR_MITRA_17',
-            layerName: 'layer_KONTUR_MITRA_17',
-            pane: 'pane_KONTUR_MITRA_17',
-            onEachFeature: pop_KONTUR_MITRA_17,
-            style: style_KONTUR_MITRA_17_0,
+            interactive: false,
+            dataVar: 'json_KONTUR_MITRA_10',
+            layerName: 'layer_KONTUR_MITRA_10',
+            pane: 'pane_KONTUR_MITRA_10',
+            onEachFeature: pop_KONTUR_MITRA_10,
+            style: style_KONTUR_MITRA_10_0,
         });
-        bounds_group.addLayer(layer_KONTUR_MITRA_17);
-        map.addLayer(layer_KONTUR_MITRA_17);
-        function pop_SUNGA_MITRA_18(feature, layer) {
+        bounds_group.addLayer(layer_KONTUR_MITRA_10);
+        map.addLayer(layer_KONTUR_MITRA_10);
+        function pop_SUNGA_MITRA_11(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['NAMOBJ'] !== null ? autolinker.link(feature.properties['NAMOBJ'].toLocaleString()) : '') + '</td>\
@@ -1227,9 +1144,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_SUNGA_MITRA_18_0() {
+        function style_SUNGA_MITRA_11_0() {
             return {
-                pane: 'pane_SUNGA_MITRA_18',
+                pane: 'pane_SUNGA_MITRA_11',
                 opacity: 1,
                 color: 'rgba(72,123,182,1.0)',
                 dashArray: '',
@@ -1237,24 +1154,24 @@
                 lineJoin: 'bevel',
                 weight: 1.0,
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
-        map.createPane('pane_SUNGA_MITRA_18');
-        map.getPane('pane_SUNGA_MITRA_18').style.zIndex = 418;
-        map.getPane('pane_SUNGA_MITRA_18').style['mix-blend-mode'] = 'normal';
-        var layer_SUNGA_MITRA_18 = new L.geoJson(json_SUNGA_MITRA_18, {
+        map.createPane('pane_SUNGA_MITRA_11');
+        map.getPane('pane_SUNGA_MITRA_11').style.zIndex = 411;
+        map.getPane('pane_SUNGA_MITRA_11').style['mix-blend-mode'] = 'normal';
+        var layer_SUNGA_MITRA_11 = new L.geoJson(json_SUNGA_MITRA_11, {
             attribution: '',
-            interactive: true,
-            dataVar: 'json_SUNGA_MITRA_18',
-            layerName: 'layer_SUNGA_MITRA_18',
-            pane: 'pane_SUNGA_MITRA_18',
-            onEachFeature: pop_SUNGA_MITRA_18,
-            style: style_SUNGA_MITRA_18_0,
+            interactive: false,
+            dataVar: 'json_SUNGA_MITRA_11',
+            layerName: 'layer_SUNGA_MITRA_11',
+            pane: 'pane_SUNGA_MITRA_11',
+            onEachFeature: pop_SUNGA_MITRA_11,
+            style: style_SUNGA_MITRA_11_0,
         });
-        bounds_group.addLayer(layer_SUNGA_MITRA_18);
-        map.addLayer(layer_SUNGA_MITRA_18);
-        function pop_Track1_19(feature, layer) {
+        bounds_group.addLayer(layer_SUNGA_MITRA_11);
+        map.addLayer(layer_SUNGA_MITRA_11);
+        function pop_Track1_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">name</th>\
@@ -1268,9 +1185,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_Track1_19_0() {
+        function style_Track1_12_0() {
             return {
-                pane: 'pane_Track1_19',
+                pane: 'pane_Track1_12',
                 opacity: 1,
                 color: 'rgba(219,30,42,1.0)',
                 dashArray: '',
@@ -1281,21 +1198,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Track1_19');
-        map.getPane('pane_Track1_19').style.zIndex = 419;
-        map.getPane('pane_Track1_19').style['mix-blend-mode'] = 'normal';
-        var layer_Track1_19 = new L.geoJson(json_Track1_19, {
+        map.createPane('pane_Track1_12');
+        map.getPane('pane_Track1_12').style.zIndex = 412;
+        map.getPane('pane_Track1_12').style['mix-blend-mode'] = 'normal';
+        var layer_Track1_12 = new L.geoJson(json_Track1_12, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Track1_19',
-            layerName: 'layer_Track1_19',
-            pane: 'pane_Track1_19',
-            onEachFeature: pop_Track1_19,
-            style: style_Track1_19_0,
+            dataVar: 'json_Track1_12',
+            layerName: 'layer_Track1_12',
+            pane: 'pane_Track1_12',
+            onEachFeature: pop_Track1_12,
+            style: style_Track1_12_0,
         });
-        bounds_group.addLayer(layer_Track1_19);
-        map.addLayer(layer_Track1_19);
-        function pop_StartingPoint_20(feature, layer) {
+        bounds_group.addLayer(layer_Track1_12);
+        map.addLayer(layer_Track1_12);
+        function pop_StartingPoint_13(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1325,57 +1242,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_StartingPoint_20_0() {
+        function style_StartingPoint_13_0() {
             return {
-                pane: 'pane_StartingPoint_20',
+                pane: 'pane_StartingPoint_13',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/StartingPoint_20.svg',
+            iconUrl: 'markers/StartingPoint_13.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_StartingPoint_20_1() {
+        function style_StartingPoint_13_1() {
             return {
-                pane: 'pane_StartingPoint_20',
+                pane: 'pane_StartingPoint_13',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/StartingPoint_20.svg',
+            iconUrl: 'markers/StartingPoint_13.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_StartingPoint_20');
-        map.getPane('pane_StartingPoint_20').style.zIndex = 420;
-        map.getPane('pane_StartingPoint_20').style['mix-blend-mode'] = 'normal';
-        var layer_StartingPoint_20 = new L.geoJson.multiStyle(json_StartingPoint_20, {
+        map.createPane('pane_StartingPoint_13');
+        map.getPane('pane_StartingPoint_13').style.zIndex = 413;
+        map.getPane('pane_StartingPoint_13').style['mix-blend-mode'] = 'normal';
+        var layer_StartingPoint_13 = new L.geoJson.multiStyle(json_StartingPoint_13, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_StartingPoint_20',
-            layerName: 'layer_StartingPoint_20',
-            pane: 'pane_StartingPoint_20',
-            onEachFeature: pop_StartingPoint_20,
+            dataVar: 'json_StartingPoint_13',
+            layerName: 'layer_StartingPoint_13',
+            pane: 'pane_StartingPoint_13',
+            onEachFeature: pop_StartingPoint_13,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_StartingPoint_20_0(feature));
+                return L.marker(latlng, style_StartingPoint_13_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_StartingPoint_20_1(feature));
+                return L.marker(latlng, style_StartingPoint_13_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_StartingPoint_20);
-        map.addLayer(layer_StartingPoint_20);
-        function pop_RegistrationPoint_21(feature, layer) {
+        bounds_group.addLayer(layer_StartingPoint_13);
+        map.addLayer(layer_StartingPoint_13);
+        function pop_RegistrationPoint_14(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1405,57 +1322,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_RegistrationPoint_21_0() {
+        function style_RegistrationPoint_14_0() {
             return {
-                pane: 'pane_RegistrationPoint_21',
+                pane: 'pane_RegistrationPoint_14',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/RegistrationPoint_21.svg',
+            iconUrl: 'markers/RegistrationPoint_14.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_RegistrationPoint_21_1() {
+        function style_RegistrationPoint_14_1() {
             return {
-                pane: 'pane_RegistrationPoint_21',
+                pane: 'pane_RegistrationPoint_14',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/RegistrationPoint_21.svg',
+            iconUrl: 'markers/RegistrationPoint_14.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_RegistrationPoint_21');
-        map.getPane('pane_RegistrationPoint_21').style.zIndex = 421;
-        map.getPane('pane_RegistrationPoint_21').style['mix-blend-mode'] = 'normal';
-        var layer_RegistrationPoint_21 = new L.geoJson.multiStyle(json_RegistrationPoint_21, {
+        map.createPane('pane_RegistrationPoint_14');
+        map.getPane('pane_RegistrationPoint_14').style.zIndex = 414;
+        map.getPane('pane_RegistrationPoint_14').style['mix-blend-mode'] = 'normal';
+        var layer_RegistrationPoint_14 = new L.geoJson.multiStyle(json_RegistrationPoint_14, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_RegistrationPoint_21',
-            layerName: 'layer_RegistrationPoint_21',
-            pane: 'pane_RegistrationPoint_21',
-            onEachFeature: pop_RegistrationPoint_21,
+            dataVar: 'json_RegistrationPoint_14',
+            layerName: 'layer_RegistrationPoint_14',
+            pane: 'pane_RegistrationPoint_14',
+            onEachFeature: pop_RegistrationPoint_14,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_RegistrationPoint_21_0(feature));
+                return L.marker(latlng, style_RegistrationPoint_14_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_RegistrationPoint_21_1(feature));
+                return L.marker(latlng, style_RegistrationPoint_14_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_RegistrationPoint_21);
-        map.addLayer(layer_RegistrationPoint_21);
-        function pop_MataAir_22(feature, layer) {
+        bounds_group.addLayer(layer_RegistrationPoint_14);
+        map.addLayer(layer_RegistrationPoint_14);
+        function pop_MataAir_15(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1485,39 +1402,39 @@
             popup.setContent(updatedContent);
         }
 
-        function style_MataAir_22_0() {
+        function style_MataAir_15_0() {
             return {
-                pane: 'pane_MataAir_22',
+                pane: 'pane_MataAir_15',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/MataAir_22.svg',
+            iconUrl: 'markers/MataAir_15.svg',
             iconSize: [38.0, 38.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_MataAir_22');
-        map.getPane('pane_MataAir_22').style.zIndex = 422;
-        map.getPane('pane_MataAir_22').style['mix-blend-mode'] = 'normal';
-        var layer_MataAir_22 = new L.geoJson(json_MataAir_22, {
+        map.createPane('pane_MataAir_15');
+        map.getPane('pane_MataAir_15').style.zIndex = 415;
+        map.getPane('pane_MataAir_15').style['mix-blend-mode'] = 'normal';
+        var layer_MataAir_15 = new L.geoJson(json_MataAir_15, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_MataAir_22',
-            layerName: 'layer_MataAir_22',
-            pane: 'pane_MataAir_22',
-            onEachFeature: pop_MataAir_22,
+            dataVar: 'json_MataAir_15',
+            layerName: 'layer_MataAir_15',
+            pane: 'pane_MataAir_15',
+            onEachFeature: pop_MataAir_15,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_MataAir_22_0(feature));
+                return L.marker(latlng, style_MataAir_15_0(feature));
             },
         });
-        bounds_group.addLayer(layer_MataAir_22);
-        map.addLayer(layer_MataAir_22);
-        function pop_CampGround1_23(feature, layer) {
+        bounds_group.addLayer(layer_MataAir_15);
+        map.addLayer(layer_MataAir_15);
+        function pop_CampGround1_16(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1547,57 +1464,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_CampGround1_23_0() {
+        function style_CampGround1_16_0() {
             return {
-                pane: 'pane_CampGround1_23',
+                pane: 'pane_CampGround1_16',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/CampGround1_23.svg',
+            iconUrl: 'markers/CampGround1_16.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_CampGround1_23_1() {
+        function style_CampGround1_16_1() {
             return {
-                pane: 'pane_CampGround1_23',
+                pane: 'pane_CampGround1_16',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/CampGround1_23.svg',
+            iconUrl: 'markers/CampGround1_16.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_CampGround1_23');
-        map.getPane('pane_CampGround1_23').style.zIndex = 423;
-        map.getPane('pane_CampGround1_23').style['mix-blend-mode'] = 'normal';
-        var layer_CampGround1_23 = new L.geoJson.multiStyle(json_CampGround1_23, {
+        map.createPane('pane_CampGround1_16');
+        map.getPane('pane_CampGround1_16').style.zIndex = 416;
+        map.getPane('pane_CampGround1_16').style['mix-blend-mode'] = 'normal';
+        var layer_CampGround1_16 = new L.geoJson.multiStyle(json_CampGround1_16, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_CampGround1_23',
-            layerName: 'layer_CampGround1_23',
-            pane: 'pane_CampGround1_23',
-            onEachFeature: pop_CampGround1_23,
+            dataVar: 'json_CampGround1_16',
+            layerName: 'layer_CampGround1_16',
+            pane: 'pane_CampGround1_16',
+            onEachFeature: pop_CampGround1_16,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_CampGround1_23_0(feature));
+                return L.marker(latlng, style_CampGround1_16_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_CampGround1_23_1(feature));
+                return L.marker(latlng, style_CampGround1_16_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_CampGround1_23);
-        map.addLayer(layer_CampGround1_23);
-        function pop_Track2_24(feature, layer) {
+        bounds_group.addLayer(layer_CampGround1_16);
+        map.addLayer(layer_CampGround1_16);
+        function pop_Track2_17(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">name</th>\
@@ -1611,9 +1528,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_Track2_24_0() {
+        function style_Track2_17_0() {
             return {
-                pane: 'pane_Track2_24',
+                pane: 'pane_Track2_17',
                 opacity: 1,
                 color: 'rgba(219,30,42,1.0)',
                 dashArray: '',
@@ -1624,21 +1541,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Track2_24');
-        map.getPane('pane_Track2_24').style.zIndex = 424;
-        map.getPane('pane_Track2_24').style['mix-blend-mode'] = 'normal';
-        var layer_Track2_24 = new L.geoJson(json_Track2_24, {
+        map.createPane('pane_Track2_17');
+        map.getPane('pane_Track2_17').style.zIndex = 417;
+        map.getPane('pane_Track2_17').style['mix-blend-mode'] = 'normal';
+        var layer_Track2_17 = new L.geoJson(json_Track2_17, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Track2_24',
-            layerName: 'layer_Track2_24',
-            pane: 'pane_Track2_24',
-            onEachFeature: pop_Track2_24,
-            style: style_Track2_24_0,
+            dataVar: 'json_Track2_17',
+            layerName: 'layer_Track2_17',
+            pane: 'pane_Track2_17',
+            onEachFeature: pop_Track2_17,
+            style: style_Track2_17_0,
         });
-        bounds_group.addLayer(layer_Track2_24);
-        map.addLayer(layer_Track2_24);
-        function pop_PosBayangan1_25(feature, layer) {
+        bounds_group.addLayer(layer_Track2_17);
+        map.addLayer(layer_Track2_17);
+        function pop_PosBayangan1_18(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1668,57 +1585,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_PosBayangan1_25_0() {
+        function style_PosBayangan1_18_0() {
             return {
-                pane: 'pane_PosBayangan1_25',
+                pane: 'pane_PosBayangan1_18',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PosBayangan1_25.svg',
+            iconUrl: 'markers/PosBayangan1_18.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_PosBayangan1_25_1() {
+        function style_PosBayangan1_18_1() {
             return {
-                pane: 'pane_PosBayangan1_25',
+                pane: 'pane_PosBayangan1_18',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PosBayangan1_25.svg',
+            iconUrl: 'markers/PosBayangan1_18.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_PosBayangan1_25');
-        map.getPane('pane_PosBayangan1_25').style.zIndex = 425;
-        map.getPane('pane_PosBayangan1_25').style['mix-blend-mode'] = 'normal';
-        var layer_PosBayangan1_25 = new L.geoJson.multiStyle(json_PosBayangan1_25, {
+        map.createPane('pane_PosBayangan1_18');
+        map.getPane('pane_PosBayangan1_18').style.zIndex = 418;
+        map.getPane('pane_PosBayangan1_18').style['mix-blend-mode'] = 'normal';
+        var layer_PosBayangan1_18 = new L.geoJson.multiStyle(json_PosBayangan1_18, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_PosBayangan1_25',
-            layerName: 'layer_PosBayangan1_25',
-            pane: 'pane_PosBayangan1_25',
-            onEachFeature: pop_PosBayangan1_25,
+            dataVar: 'json_PosBayangan1_18',
+            layerName: 'layer_PosBayangan1_18',
+            pane: 'pane_PosBayangan1_18',
+            onEachFeature: pop_PosBayangan1_18,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PosBayangan1_25_0(feature));
+                return L.marker(latlng, style_PosBayangan1_18_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PosBayangan1_25_1(feature));
+                return L.marker(latlng, style_PosBayangan1_18_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_PosBayangan1_25);
-        map.addLayer(layer_PosBayangan1_25);
-        function pop_SpotView1_26(feature, layer) {
+        bounds_group.addLayer(layer_PosBayangan1_18);
+        map.addLayer(layer_PosBayangan1_18);
+        function pop_SpotView1_19(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1748,57 +1665,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_SpotView1_26_0() {
+        function style_SpotView1_19_0() {
             return {
-                pane: 'pane_SpotView1_26',
+                pane: 'pane_SpotView1_19',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/SpotView1_26.svg',
+            iconUrl: 'markers/SpotView1_19.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_SpotView1_26_1() {
+        function style_SpotView1_19_1() {
             return {
-                pane: 'pane_SpotView1_26',
+                pane: 'pane_SpotView1_19',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/SpotView1_26.svg',
+            iconUrl: 'markers/SpotView1_19.svg',
             iconSize: [22.799999999999997, 22.799999999999997]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_SpotView1_26');
-        map.getPane('pane_SpotView1_26').style.zIndex = 426;
-        map.getPane('pane_SpotView1_26').style['mix-blend-mode'] = 'normal';
-        var layer_SpotView1_26 = new L.geoJson.multiStyle(json_SpotView1_26, {
+        map.createPane('pane_SpotView1_19');
+        map.getPane('pane_SpotView1_19').style.zIndex = 419;
+        map.getPane('pane_SpotView1_19').style['mix-blend-mode'] = 'normal';
+        var layer_SpotView1_19 = new L.geoJson.multiStyle(json_SpotView1_19, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_SpotView1_26',
-            layerName: 'layer_SpotView1_26',
-            pane: 'pane_SpotView1_26',
-            onEachFeature: pop_SpotView1_26,
+            dataVar: 'json_SpotView1_19',
+            layerName: 'layer_SpotView1_19',
+            pane: 'pane_SpotView1_19',
+            onEachFeature: pop_SpotView1_19,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SpotView1_26_0(feature));
+                return L.marker(latlng, style_SpotView1_19_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SpotView1_26_1(feature));
+                return L.marker(latlng, style_SpotView1_19_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_SpotView1_26);
-        map.addLayer(layer_SpotView1_26);
-        function pop_SpotView2_27(feature, layer) {
+        bounds_group.addLayer(layer_SpotView1_19);
+        map.addLayer(layer_SpotView1_19);
+        function pop_SpotView2_20(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1809,8 +1726,8 @@
                         <td class="visible-with-data" id="time">' + (feature.properties['time'] !== null ? autolinker.link(feature.properties['time'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">geoidheigh</th>\
-                        <td class="visible-with-data" id="geoidheigh">' + (feature.properties['geoidheigh'] !== null ? autolinker.link(feature.properties['geoidheigh'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">name</th>\
+                        <td class="visible-with-data" id="name">' + (feature.properties['name'] !== null ? autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">x</th>\
@@ -1828,57 +1745,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_SpotView2_27_0() {
+        function style_SpotView2_20_0() {
             return {
-                pane: 'pane_SpotView2_27',
+                pane: 'pane_SpotView2_20',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/SpotView2_27.svg',
+            iconUrl: 'markers/SpotView2_20.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_SpotView2_27_1() {
+        function style_SpotView2_20_1() {
             return {
-                pane: 'pane_SpotView2_27',
+                pane: 'pane_SpotView2_20',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/SpotView2_27.svg',
+            iconUrl: 'markers/SpotView2_20.svg',
             iconSize: [22.799999999999997, 22.799999999999997]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_SpotView2_27');
-        map.getPane('pane_SpotView2_27').style.zIndex = 427;
-        map.getPane('pane_SpotView2_27').style['mix-blend-mode'] = 'normal';
-        var layer_SpotView2_27 = new L.geoJson.multiStyle(json_SpotView2_27, {
+        map.createPane('pane_SpotView2_20');
+        map.getPane('pane_SpotView2_20').style.zIndex = 420;
+        map.getPane('pane_SpotView2_20').style['mix-blend-mode'] = 'normal';
+        var layer_SpotView2_20 = new L.geoJson.multiStyle(json_SpotView2_20, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_SpotView2_27',
-            layerName: 'layer_SpotView2_27',
-            pane: 'pane_SpotView2_27',
-            onEachFeature: pop_SpotView2_27,
+            dataVar: 'json_SpotView2_20',
+            layerName: 'layer_SpotView2_20',
+            pane: 'pane_SpotView2_20',
+            onEachFeature: pop_SpotView2_20,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SpotView2_27_0(feature));
+                return L.marker(latlng, style_SpotView2_20_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SpotView2_27_1(feature));
+                return L.marker(latlng, style_SpotView2_20_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_SpotView2_27);
-        map.addLayer(layer_SpotView2_27);
-        function pop_TitikPanorama1_28(feature, layer) {
+        bounds_group.addLayer(layer_SpotView2_20);
+        map.addLayer(layer_SpotView2_20);
+        function pop_TitikPanorama1_21(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1908,57 +1825,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_TitikPanorama1_28_0() {
+        function style_TitikPanorama1_21_0() {
             return {
-                pane: 'pane_TitikPanorama1_28',
+                pane: 'pane_TitikPanorama1_21',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/TitikPanorama1_28.svg',
+            iconUrl: 'markers/TitikPanorama1_21.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_TitikPanorama1_28_1() {
+        function style_TitikPanorama1_21_1() {
             return {
-                pane: 'pane_TitikPanorama1_28',
+                pane: 'pane_TitikPanorama1_21',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/TitikPanorama1_28.svg',
+            iconUrl: 'markers/TitikPanorama1_21.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_TitikPanorama1_28');
-        map.getPane('pane_TitikPanorama1_28').style.zIndex = 428;
-        map.getPane('pane_TitikPanorama1_28').style['mix-blend-mode'] = 'normal';
-        var layer_TitikPanorama1_28 = new L.geoJson.multiStyle(json_TitikPanorama1_28, {
+        map.createPane('pane_TitikPanorama1_21');
+        map.getPane('pane_TitikPanorama1_21').style.zIndex = 421;
+        map.getPane('pane_TitikPanorama1_21').style['mix-blend-mode'] = 'normal';
+        var layer_TitikPanorama1_21 = new L.geoJson.multiStyle(json_TitikPanorama1_21, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_TitikPanorama1_28',
-            layerName: 'layer_TitikPanorama1_28',
-            pane: 'pane_TitikPanorama1_28',
-            onEachFeature: pop_TitikPanorama1_28,
+            dataVar: 'json_TitikPanorama1_21',
+            layerName: 'layer_TitikPanorama1_21',
+            pane: 'pane_TitikPanorama1_21',
+            onEachFeature: pop_TitikPanorama1_21,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_TitikPanorama1_28_0(feature));
+                return L.marker(latlng, style_TitikPanorama1_21_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_TitikPanorama1_28_1(feature));
+                return L.marker(latlng, style_TitikPanorama1_21_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_TitikPanorama1_28);
-        map.addLayer(layer_TitikPanorama1_28);
-        function pop_PosBayangan2_29(feature, layer) {
+        bounds_group.addLayer(layer_TitikPanorama1_21);
+        map.addLayer(layer_TitikPanorama1_21);
+        function pop_PosBayangan2_22(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -1988,57 +1905,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_PosBayangan2_29_0() {
+        function style_PosBayangan2_22_0() {
             return {
-                pane: 'pane_PosBayangan2_29',
+                pane: 'pane_PosBayangan2_22',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PosBayangan2_29.svg',
+            iconUrl: 'markers/PosBayangan2_22.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_PosBayangan2_29_1() {
+        function style_PosBayangan2_22_1() {
             return {
-                pane: 'pane_PosBayangan2_29',
+                pane: 'pane_PosBayangan2_22',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PosBayangan2_29.svg',
+            iconUrl: 'markers/PosBayangan2_22.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_PosBayangan2_29');
-        map.getPane('pane_PosBayangan2_29').style.zIndex = 429;
-        map.getPane('pane_PosBayangan2_29').style['mix-blend-mode'] = 'normal';
-        var layer_PosBayangan2_29 = new L.geoJson.multiStyle(json_PosBayangan2_29, {
+        map.createPane('pane_PosBayangan2_22');
+        map.getPane('pane_PosBayangan2_22').style.zIndex = 422;
+        map.getPane('pane_PosBayangan2_22').style['mix-blend-mode'] = 'normal';
+        var layer_PosBayangan2_22 = new L.geoJson.multiStyle(json_PosBayangan2_22, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_PosBayangan2_29',
-            layerName: 'layer_PosBayangan2_29',
-            pane: 'pane_PosBayangan2_29',
-            onEachFeature: pop_PosBayangan2_29,
+            dataVar: 'json_PosBayangan2_22',
+            layerName: 'layer_PosBayangan2_22',
+            pane: 'pane_PosBayangan2_22',
+            onEachFeature: pop_PosBayangan2_22,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PosBayangan2_29_0(feature));
+                return L.marker(latlng, style_PosBayangan2_22_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PosBayangan2_29_1(feature));
+                return L.marker(latlng, style_PosBayangan2_22_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_PosBayangan2_29);
-        map.addLayer(layer_PosBayangan2_29);
-        function pop_PosBayangan3_30(feature, layer) {
+        bounds_group.addLayer(layer_PosBayangan2_22);
+        map.addLayer(layer_PosBayangan2_22);
+        function pop_PosBayangan3_23(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -2068,57 +1985,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_PosBayangan3_30_0() {
+        function style_PosBayangan3_23_0() {
             return {
-                pane: 'pane_PosBayangan3_30',
+                pane: 'pane_PosBayangan3_23',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PosBayangan3_30.svg',
+            iconUrl: 'markers/PosBayangan3_23.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_PosBayangan3_30_1() {
+        function style_PosBayangan3_23_1() {
             return {
-                pane: 'pane_PosBayangan3_30',
+                pane: 'pane_PosBayangan3_23',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PosBayangan3_30.svg',
+            iconUrl: 'markers/PosBayangan3_23.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_PosBayangan3_30');
-        map.getPane('pane_PosBayangan3_30').style.zIndex = 430;
-        map.getPane('pane_PosBayangan3_30').style['mix-blend-mode'] = 'normal';
-        var layer_PosBayangan3_30 = new L.geoJson.multiStyle(json_PosBayangan3_30, {
+        map.createPane('pane_PosBayangan3_23');
+        map.getPane('pane_PosBayangan3_23').style.zIndex = 423;
+        map.getPane('pane_PosBayangan3_23').style['mix-blend-mode'] = 'normal';
+        var layer_PosBayangan3_23 = new L.geoJson.multiStyle(json_PosBayangan3_23, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_PosBayangan3_30',
-            layerName: 'layer_PosBayangan3_30',
-            pane: 'pane_PosBayangan3_30',
-            onEachFeature: pop_PosBayangan3_30,
+            dataVar: 'json_PosBayangan3_23',
+            layerName: 'layer_PosBayangan3_23',
+            pane: 'pane_PosBayangan3_23',
+            onEachFeature: pop_PosBayangan3_23,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PosBayangan3_30_0(feature));
+                return L.marker(latlng, style_PosBayangan3_23_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PosBayangan3_30_1(feature));
+                return L.marker(latlng, style_PosBayangan3_23_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_PosBayangan3_30);
-        map.addLayer(layer_PosBayangan3_30);
-        function pop_SpotView3_31(feature, layer) {
+        bounds_group.addLayer(layer_PosBayangan3_23);
+        map.addLayer(layer_PosBayangan3_23);
+        function pop_SpotView3_24(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -2148,57 +2065,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_SpotView3_31_0() {
+        function style_SpotView3_24_0() {
             return {
-                pane: 'pane_SpotView3_31',
+                pane: 'pane_SpotView3_24',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/SpotView3_31.svg',
+            iconUrl: 'markers/SpotView3_24.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_SpotView3_31_1() {
+        function style_SpotView3_24_1() {
             return {
-                pane: 'pane_SpotView3_31',
+                pane: 'pane_SpotView3_24',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/SpotView3_31.svg',
+            iconUrl: 'markers/SpotView3_24.svg',
             iconSize: [22.799999999999997, 22.799999999999997]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_SpotView3_31');
-        map.getPane('pane_SpotView3_31').style.zIndex = 431;
-        map.getPane('pane_SpotView3_31').style['mix-blend-mode'] = 'normal';
-        var layer_SpotView3_31 = new L.geoJson.multiStyle(json_SpotView3_31, {
+        map.createPane('pane_SpotView3_24');
+        map.getPane('pane_SpotView3_24').style.zIndex = 424;
+        map.getPane('pane_SpotView3_24').style['mix-blend-mode'] = 'normal';
+        var layer_SpotView3_24 = new L.geoJson.multiStyle(json_SpotView3_24, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_SpotView3_31',
-            layerName: 'layer_SpotView3_31',
-            pane: 'pane_SpotView3_31',
-            onEachFeature: pop_SpotView3_31,
+            dataVar: 'json_SpotView3_24',
+            layerName: 'layer_SpotView3_24',
+            pane: 'pane_SpotView3_24',
+            onEachFeature: pop_SpotView3_24,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SpotView3_31_0(feature));
+                return L.marker(latlng, style_SpotView3_24_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_SpotView3_31_1(feature));
+                return L.marker(latlng, style_SpotView3_24_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_SpotView3_31);
-        map.addLayer(layer_SpotView3_31);
-        function pop_KawahTua_32(feature, layer) {
+        bounds_group.addLayer(layer_SpotView3_24);
+        map.addLayer(layer_SpotView3_24);
+        function pop_KawahTua_25(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -2228,9 +2145,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_KawahTua_32_0() {
+        function style_KawahTua_25_0() {
             return {
-                pane: 'pane_KawahTua_32',
+                pane: 'pane_KawahTua_25',
                 shape: 'triangle',
                 radius: 10.0,
                 opacity: 1,
@@ -2245,27 +2162,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_KawahTua_32');
-        map.getPane('pane_KawahTua_32').style.zIndex = 432;
-        map.getPane('pane_KawahTua_32').style['mix-blend-mode'] = 'normal';
-        var layer_KawahTua_32 = new L.geoJson(json_KawahTua_32, {
+        map.createPane('pane_KawahTua_25');
+        map.getPane('pane_KawahTua_25').style.zIndex = 425;
+        map.getPane('pane_KawahTua_25').style['mix-blend-mode'] = 'normal';
+        var layer_KawahTua_25 = new L.geoJson(json_KawahTua_25, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_KawahTua_32',
-            layerName: 'layer_KawahTua_32',
-            pane: 'pane_KawahTua_32',
-            onEachFeature: pop_KawahTua_32,
+            dataVar: 'json_KawahTua_25',
+            layerName: 'layer_KawahTua_25',
+            pane: 'pane_KawahTua_25',
+            onEachFeature: pop_KawahTua_25,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.shapeMarker(latlng, style_KawahTua_32_0(feature));
+                return L.shapeMarker(latlng, style_KawahTua_25_0(feature));
             },
         });
-        bounds_group.addLayer(layer_KawahTua_32);
-        map.addLayer(layer_KawahTua_32);
-        function pop_KawahLama_33(feature, layer) {
+        bounds_group.addLayer(layer_KawahTua_25);
+        map.addLayer(layer_KawahTua_25);
+        function pop_KawahLama_26(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -2295,9 +2212,9 @@
             popup.setContent(updatedContent);
         }
 
-        function style_KawahLama_33_0() {
+        function style_KawahLama_26_0() {
             return {
-                pane: 'pane_KawahLama_33',
+                pane: 'pane_KawahLama_26',
                 shape: 'triangle',
                 radius: 10.0,
                 opacity: 1,
@@ -2312,27 +2229,27 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_KawahLama_33');
-        map.getPane('pane_KawahLama_33').style.zIndex = 433;
-        map.getPane('pane_KawahLama_33').style['mix-blend-mode'] = 'normal';
-        var layer_KawahLama_33 = new L.geoJson(json_KawahLama_33, {
+        map.createPane('pane_KawahLama_26');
+        map.getPane('pane_KawahLama_26').style.zIndex = 426;
+        map.getPane('pane_KawahLama_26').style['mix-blend-mode'] = 'normal';
+        var layer_KawahLama_26 = new L.geoJson(json_KawahLama_26, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_KawahLama_33',
-            layerName: 'layer_KawahLama_33',
-            pane: 'pane_KawahLama_33',
-            onEachFeature: pop_KawahLama_33,
+            dataVar: 'json_KawahLama_26',
+            layerName: 'layer_KawahLama_26',
+            pane: 'pane_KawahLama_26',
+            onEachFeature: pop_KawahLama_26,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.shapeMarker(latlng, style_KawahLama_33_0(feature));
+                return L.shapeMarker(latlng, style_KawahLama_26_0(feature));
             },
         });
-        bounds_group.addLayer(layer_KawahLama_33);
-        map.addLayer(layer_KawahLama_33);
-        function pop_PanoramicPoint2_34(feature, layer) {
+        bounds_group.addLayer(layer_KawahLama_26);
+        map.addLayer(layer_KawahLama_26);
+        function pop_PanoramicPoint2_27(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -2362,57 +2279,57 @@
             popup.setContent(updatedContent);
         }
 
-        function style_PanoramicPoint2_34_0() {
+        function style_PanoramicPoint2_27_0() {
             return {
-                pane: 'pane_PanoramicPoint2_34',
+                pane: 'pane_PanoramicPoint2_27',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PanoramicPoint2_34.svg',
+            iconUrl: 'markers/PanoramicPoint2_27.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_PanoramicPoint2_34_1() {
+        function style_PanoramicPoint2_27_1() {
             return {
-                pane: 'pane_PanoramicPoint2_34',
+                pane: 'pane_PanoramicPoint2_27',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PanoramicPoint2_34.svg',
+            iconUrl: 'markers/PanoramicPoint2_27.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_PanoramicPoint2_34');
-        map.getPane('pane_PanoramicPoint2_34').style.zIndex = 434;
-        map.getPane('pane_PanoramicPoint2_34').style['mix-blend-mode'] = 'normal';
-        var layer_PanoramicPoint2_34 = new L.geoJson.multiStyle(json_PanoramicPoint2_34, {
+        map.createPane('pane_PanoramicPoint2_27');
+        map.getPane('pane_PanoramicPoint2_27').style.zIndex = 427;
+        map.getPane('pane_PanoramicPoint2_27').style['mix-blend-mode'] = 'normal';
+        var layer_PanoramicPoint2_27 = new L.geoJson.multiStyle(json_PanoramicPoint2_27, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_PanoramicPoint2_34',
-            layerName: 'layer_PanoramicPoint2_34',
-            pane: 'pane_PanoramicPoint2_34',
-            onEachFeature: pop_PanoramicPoint2_34,
+            dataVar: 'json_PanoramicPoint2_27',
+            layerName: 'layer_PanoramicPoint2_27',
+            pane: 'pane_PanoramicPoint2_27',
+            onEachFeature: pop_PanoramicPoint2_27,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PanoramicPoint2_34_0(feature));
+                return L.marker(latlng, style_PanoramicPoint2_27_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PanoramicPoint2_34_1(feature));
+                return L.marker(latlng, style_PanoramicPoint2_27_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_PanoramicPoint2_34);
-        map.addLayer(layer_PanoramicPoint2_34);
-        function pop_PanoramaPuncakAnakGnSoputan_35(feature, layer) {
+        bounds_group.addLayer(layer_PanoramicPoint2_27);
+        map.addLayer(layer_PanoramicPoint2_27);
+        function pop_PanoramaPuncakAnakGnSoputan_28(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">ele</th>\
@@ -2442,58 +2359,64 @@
             popup.setContent(updatedContent);
         }
 
-        function style_PanoramaPuncakAnakGnSoputan_35_0() {
+        function style_PanoramaPuncakAnakGnSoputan_28_0() {
             return {
-                pane: 'pane_PanoramaPuncakAnakGnSoputan_35',
+                pane: 'pane_PanoramaPuncakAnakGnSoputan_28',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PanoramaPuncakAnakGnSoputan_35.svg',
+            iconUrl: 'markers/PanoramaPuncakAnakGnSoputan_28.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_PanoramaPuncakAnakGnSoputan_35_1() {
+        function style_PanoramaPuncakAnakGnSoputan_28_1() {
             return {
-                pane: 'pane_PanoramaPuncakAnakGnSoputan_35',
+                pane: 'pane_PanoramaPuncakAnakGnSoputan_28',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PanoramaPuncakAnakGnSoputan_35.svg',
+            iconUrl: 'markers/PanoramaPuncakAnakGnSoputan_28.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_PanoramaPuncakAnakGnSoputan_35');
-        map.getPane('pane_PanoramaPuncakAnakGnSoputan_35').style.zIndex = 435;
-        map.getPane('pane_PanoramaPuncakAnakGnSoputan_35').style['mix-blend-mode'] = 'normal';
-        var layer_PanoramaPuncakAnakGnSoputan_35 = new L.geoJson.multiStyle(json_PanoramaPuncakAnakGnSoputan_35, {
+        map.createPane('pane_PanoramaPuncakAnakGnSoputan_28');
+        map.getPane('pane_PanoramaPuncakAnakGnSoputan_28').style.zIndex = 428;
+        map.getPane('pane_PanoramaPuncakAnakGnSoputan_28').style['mix-blend-mode'] = 'normal';
+        var layer_PanoramaPuncakAnakGnSoputan_28 = new L.geoJson.multiStyle(json_PanoramaPuncakAnakGnSoputan_28, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_PanoramaPuncakAnakGnSoputan_35',
-            layerName: 'layer_PanoramaPuncakAnakGnSoputan_35',
-            pane: 'pane_PanoramaPuncakAnakGnSoputan_35',
-            onEachFeature: pop_PanoramaPuncakAnakGnSoputan_35,
+            dataVar: 'json_PanoramaPuncakAnakGnSoputan_28',
+            layerName: 'layer_PanoramaPuncakAnakGnSoputan_28',
+            pane: 'pane_PanoramaPuncakAnakGnSoputan_28',
+            onEachFeature: pop_PanoramaPuncakAnakGnSoputan_28,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PanoramaPuncakAnakGnSoputan_35_0(feature));
+                return L.marker(latlng, style_PanoramaPuncakAnakGnSoputan_28_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PanoramaPuncakAnakGnSoputan_35_1(feature));
+                return L.marker(latlng, style_PanoramaPuncakAnakGnSoputan_28_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_PanoramaPuncakAnakGnSoputan_35);
-        map.addLayer(layer_PanoramaPuncakAnakGnSoputan_35);
-        function pop_PuncakAnakGnSoputan_36(feature, layer) {
+        bounds_group.addLayer(layer_PanoramaPuncakAnakGnSoputan_28);
+        map.addLayer(layer_PanoramaPuncakAnakGnSoputan_28);
+        function pop_PuncakAnakGnSoputan_29(feature, layer) {
             var popupContent = '<table>\
+                    <tr>\
+                        <td class="visible-with-data" id="track_fid"colspan="2"><strong>track_fid</strong><br />' + (feature.properties['track_fid'] !== null ? autolinker.link(feature.properties['track_fid'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td class="visible-with-data" id="track_seg_"colspan="2"><strong>track_seg_</strong><br />' + (feature.properties['track_seg_'] !== null ? autolinker.link(feature.properties['track_seg_'].toLocaleString()) : '') + '</td>\
+                    </tr>\
                     <tr>\
                         <th scope="row">ele</th>\
                         <td class="visible-with-data" id="ele">' + (feature.properties['ele'] !== null ? autolinker.link(feature.properties['ele'].toLocaleString()) : '') + '</td>\
@@ -2522,101 +2445,93 @@
             popup.setContent(updatedContent);
         }
 
-        function style_PuncakAnakGnSoputan_36_0() {
+        function style_PuncakAnakGnSoputan_29_0() {
             return {
-                pane: 'pane_PuncakAnakGnSoputan_36',
+                pane: 'pane_PuncakAnakGnSoputan_29',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PuncakAnakGnSoputan_36.svg',
+            iconUrl: 'markers/PuncakAnakGnSoputan_29.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
                 interactive: true,
             }
         }
-        function style_PuncakAnakGnSoputan_36_1() {
+        function style_PuncakAnakGnSoputan_29_1() {
             return {
-                pane: 'pane_PuncakAnakGnSoputan_36',
+                pane: 'pane_PuncakAnakGnSoputan_29',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/PuncakAnakGnSoputan_36.svg',
+            iconUrl: 'markers/PuncakAnakGnSoputan_29.svg',
             iconSize: [19.0, 19.0]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_PuncakAnakGnSoputan_36');
-        map.getPane('pane_PuncakAnakGnSoputan_36').style.zIndex = 436;
-        map.getPane('pane_PuncakAnakGnSoputan_36').style['mix-blend-mode'] = 'normal';
-        var layer_PuncakAnakGnSoputan_36 = new L.geoJson.multiStyle(json_PuncakAnakGnSoputan_36, {
+        map.createPane('pane_PuncakAnakGnSoputan_29');
+        map.getPane('pane_PuncakAnakGnSoputan_29').style.zIndex = 429;
+        map.getPane('pane_PuncakAnakGnSoputan_29').style['mix-blend-mode'] = 'normal';
+        var layer_PuncakAnakGnSoputan_29 = new L.geoJson.multiStyle(json_PuncakAnakGnSoputan_29, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_PuncakAnakGnSoputan_36',
-            layerName: 'layer_PuncakAnakGnSoputan_36',
-            pane: 'pane_PuncakAnakGnSoputan_36',
-            onEachFeature: pop_PuncakAnakGnSoputan_36,
+            dataVar: 'json_PuncakAnakGnSoputan_29',
+            layerName: 'layer_PuncakAnakGnSoputan_29',
+            pane: 'pane_PuncakAnakGnSoputan_29',
+            onEachFeature: pop_PuncakAnakGnSoputan_29,
             pointToLayers: [function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PuncakAnakGnSoputan_36_0(feature));
+                return L.marker(latlng, style_PuncakAnakGnSoputan_29_0(feature));
             },function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_PuncakAnakGnSoputan_36_1(feature));
+                return L.marker(latlng, style_PuncakAnakGnSoputan_29_1(feature));
             },
         ]});
-        bounds_group.addLayer(layer_PuncakAnakGnSoputan_36);
-        map.addLayer(layer_PuncakAnakGnSoputan_36);
+        bounds_group.addLayer(layer_PuncakAnakGnSoputan_29);
+        map.addLayer(layer_PuncakAnakGnSoputan_29);
         var baseMaps = {};
         var overlaysTree = [
         {label: '<b>2kePuncak</b>', selectAllCheckbox: true, children: [
-            {label: '<img src="legend/PuncakAnakGnSoputan_36.png" /> Puncak Anak Gn. Soputan', layer: layer_PuncakAnakGnSoputan_36},
-            {label: '<img src="legend/PanoramaPuncakAnakGnSoputan_35.png" /> Panorama Puncak Anak Gn. Soputan', layer: layer_PanoramaPuncakAnakGnSoputan_35},
-            {label: '<img src="legend/PanoramicPoint2_34.png" /> Panoramic Point 2', layer: layer_PanoramicPoint2_34},
-            {label: '<img src="legend/KawahLama_33.png" /> Kawah Lama', layer: layer_KawahLama_33},
-            {label: '<img src="legend/KawahTua_32.png" /> Kawah Tua', layer: layer_KawahTua_32},
-            {label: '<img src="legend/SpotView3_31.png" /> Spot View 3', layer: layer_SpotView3_31},
-            {label: '<img src="legend/PosBayangan3_30.png" /> Pos Bayangan 3', layer: layer_PosBayangan3_30},
-            {label: '<img src="legend/PosBayangan2_29.png" /> Pos Bayangan 2', layer: layer_PosBayangan2_29},
-            {label: '<img src="legend/TitikPanorama1_28.png" /> Titik Panorama 1', layer: layer_TitikPanorama1_28},
-            {label: '<img src="legend/SpotView2_27.png" /> Spot View 2', layer: layer_SpotView2_27},
-            {label: '<img src="legend/SpotView1_26.png" /> Spot View 1', layer: layer_SpotView1_26},
-            {label: '<img src="legend/PosBayangan1_25.png" /> Pos Bayangan 1', layer: layer_PosBayangan1_25},
-            {label: '<img src="legend/Track2_24.png" /> Track 2', layer: layer_Track2_24},]},
+            {label: '<img src="legend/PuncakAnakGnSoputan_29.png" /> Puncak Anak Gn. Soputan', layer: layer_PuncakAnakGnSoputan_29},
+            {label: '<img src="legend/PanoramaPuncakAnakGnSoputan_28.png" /> Panorama Puncak Anak Gn. Soputan', layer: layer_PanoramaPuncakAnakGnSoputan_28},
+            {label: '<img src="legend/PanoramicPoint2_27.png" /> Panoramic Point 2', layer: layer_PanoramicPoint2_27},
+            {label: '<img src="legend/KawahLama_26.png" /> Kawah Lama', layer: layer_KawahLama_26},
+            {label: '<img src="legend/KawahTua_25.png" /> Kawah Tua', layer: layer_KawahTua_25},
+            {label: '<img src="legend/SpotView3_24.png" /> Spot View 3', layer: layer_SpotView3_24},
+            {label: '<img src="legend/PosBayangan3_23.png" /> Pos Bayangan 3', layer: layer_PosBayangan3_23},
+            {label: '<img src="legend/PosBayangan2_22.png" /> Pos Bayangan 2', layer: layer_PosBayangan2_22},
+            {label: '<img src="legend/TitikPanorama1_21.png" /> Titik Panorama 1', layer: layer_TitikPanorama1_21},
+            {label: '<img src="legend/SpotView2_20.png" /> Spot View 2', layer: layer_SpotView2_20},
+            {label: '<img src="legend/SpotView1_19.png" /> Spot View 1', layer: layer_SpotView1_19},
+            {label: '<img src="legend/PosBayangan1_18.png" /> Pos Bayangan 1', layer: layer_PosBayangan1_18},
+            {label: '<img src="legend/Track2_17.png" /> Track 2', layer: layer_Track2_17},]},
         {label: '<b>1ke2</b>', selectAllCheckbox: true, children: [
-            {label: '<img src="legend/CampGround1_23.png" /> Camp Ground 1', layer: layer_CampGround1_23},
-            {label: '<img src="legend/MataAir_22.png" /> Mata Air', layer: layer_MataAir_22},
-            {label: '<img src="legend/RegistrationPoint_21.png" /> Registration Point', layer: layer_RegistrationPoint_21},
-            {label: '<img src="legend/StartingPoint_20.png" /> Starting Point', layer: layer_StartingPoint_20},
-            {label: '<img src="legend/Track1_19.png" /> Track 1', layer: layer_Track1_19},]},
+            {label: '<img src="legend/CampGround1_16.png" /> Camp Ground 1', layer: layer_CampGround1_16},
+            {label: '<img src="legend/MataAir_15.png" /> Mata Air', layer: layer_MataAir_15},
+            {label: '<img src="legend/RegistrationPoint_14.png" /> Registration Point', layer: layer_RegistrationPoint_14},
+            {label: '<img src="legend/StartingPoint_13.png" /> Starting Point', layer: layer_StartingPoint_13},
+            {label: '<img src="legend/Track1_12.png" /> Track 1', layer: layer_Track1_12},]},
         {label: '<b>MINAHASA_TENGGARA</b>', selectAllCheckbox: true, children: [
-            {label: '<img src="legend/SUNGA_MITRA_18.png" /> SUNGA_MITRA', layer: layer_SUNGA_MITRA_18},
-            {label: '<img src="legend/KONTUR_MITRA_17.png" /> KONTUR_MITRA', layer: layer_KONTUR_MITRA_17},
-            {label: '<img src="legend/JALAN_MITRA_16.png" /> JALAN_MITRA', layer: layer_JALAN_MITRA_16},
-            {label: '<img src="legend/BATAS_KAB_MITRA_15.png" /> BATAS_KAB_MITRA', layer: layer_BATAS_KAB_MITRA_15},]},
+            {label: '<img src="legend/SUNGA_MITRA_11.png" /> SUNGA_MITRA', layer: layer_SUNGA_MITRA_11},
+            {label: '<img src="legend/KONTUR_MITRA_10.png" /> KONTUR_MITRA', layer: layer_KONTUR_MITRA_10},
+            {label: '<img src="legend/JALAN_MITRA_9.png" /> JALAN_MITRA', layer: layer_JALAN_MITRA_9},
+            {label: '<img src="legend/BATAS_KAB_MITRA_8.png" /> BATAS_KAB_MITRA', layer: layer_BATAS_KAB_MITRA_8},]},
         {label: '<b>MINAHASA_SELATAN</b>', selectAllCheckbox: true, children: [
-            {label: '<img src="legend/SUNGAI_MINSEL_14.png" /> SUNGAI_MINSEL', layer: layer_SUNGAI_MINSEL_14},
-            {label: '<img src="legend/KONTUR_MINSEL_13.png" /> KONTUR_MINSEL', layer: layer_KONTUR_MINSEL_13},
-            {label: '<img src="legend/JALAN_MINSEL_12.png" /> JALAN_MINSEL', layer: layer_JALAN_MINSEL_12},
-            {label: '<img src="legend/BATAS_KAB_MINSEL_11.png" /> BATAS_KAB_MINSEL', layer: layer_BATAS_KAB_MINSEL_11},]},
+            {label: '<img src="legend/SUNGAI_MINSEL_7.png" /> SUNGAI_MINSEL', layer: layer_SUNGAI_MINSEL_7},
+            {label: '<img src="legend/KONTUR_MINSEL_6.png" /> KONTUR_MINSEL', layer: layer_KONTUR_MINSEL_6},
+            {label: '<img src="legend/JALAN_MINSEL_5.png" /> JALAN_MINSEL', layer: layer_JALAN_MINSEL_5},
+            {label: '<img src="legend/BATAS_KAB_MINSEL_4.png" /> BATAS_KAB_MINSEL', layer: layer_BATAS_KAB_MINSEL_4},]},
         {label: '<b>MINAHASA</b>', selectAllCheckbox: true, children: [
-            {label: '<img src="legend/SUNGAI_MINAHASA_10.png" /> SUNGAI_MINAHASA', layer: layer_SUNGAI_MINAHASA_10},
-            {label: '<img src="legend/KONTUR_MINAHASA_9.png" /> KONTUR_MINAHASA', layer: layer_KONTUR_MINAHASA_9},
-            {label: '<img src="legend/JALAN_MINAHASA_8.png" /> JALAN_MINAHASA', layer: layer_JALAN_MINAHASA_8},
-            {label: '<img src="legend/BATAS_KAB_MINAHASA_7.png" /> BATAS_KAB_MINAHASA', layer: layer_BATAS_KAB_MINAHASA_7},]},
-        {label: '<b>BASEMAP</b>', selectAllCheckbox: true, children: [
-            {label: "Google Maps", layer: layer_GoogleMaps_6},
-            {label: "Google Terrain", layer: layer_GoogleTerrain_5},
-            {label: "Google Satellite", layer: layer_GoogleSatellite_4},
-            {label: "Esri Topographic", layer: layer_EsriTopographic_3},
-            {label: "Esri Imagery", layer: layer_EsriImagery_2},
-            {label: "OpenStreetMap", layer: layer_OpenStreetMap_1},
-            {label: "Open Topo Map", layer: layer_OpenTopoMap_0},]},]
+            {label: '<img src="legend/SUNGAI_MINAHASA_3.png" /> SUNGAI_MINAHASA', layer: layer_SUNGAI_MINAHASA_3},
+            {label: '<img src="legend/KONTUR_MINAHASA_2.png" /> KONTUR_MINAHASA', layer: layer_KONTUR_MINAHASA_2},
+            {label: '<img src="legend/JALAN_MINAHASA_1.png" /> JALAN_MINAHASA', layer: layer_JALAN_MINAHASA_1},
+            {label: '<img src="legend/BATAS_KAB_MINAHASA_0.png" /> BATAS_KAB_MINAHASA', layer: layer_BATAS_KAB_MINAHASA_0},]},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
             //selectorBack: false,
@@ -2630,12 +2545,12 @@
         L.control.scale({position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}).addTo(map);
         setBounds();
         var i = 0;
-        layer_StartingPoint_20.eachLayer(function(layer) {
+        layer_StartingPoint_13.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #000000; font-size: 10pt; font-weight: bold; font-family: \'Arial\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_StartingPoint_20'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #000000; font-size: 10pt; font-weight: bold; font-family: \'Arial\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_StartingPoint_13'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2643,12 +2558,12 @@
               i++;
         });
         var i = 0;
-        layer_RegistrationPoint_21.eachLayer(function(layer) {
+        layer_RegistrationPoint_14.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #000000; font-size: 10pt; font-weight: bold; font-family: \'Arial\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_RegistrationPoint_21'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #000000; font-size: 10pt; font-weight: bold; font-family: \'Arial\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_RegistrationPoint_14'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2656,12 +2571,12 @@
               i++;
         });
         var i = 0;
-        layer_MataAir_22.eachLayer(function(layer) {
+        layer_MataAir_15.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_MataAir_22'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_MataAir_15'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2669,12 +2584,12 @@
               i++;
         });
         var i = 0;
-        layer_CampGround1_23.eachLayer(function(layer) {
+        layer_CampGround1_16.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CampGround1_23'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_CampGround1_16'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2682,12 +2597,12 @@
               i++;
         });
         var i = 0;
-        layer_PosBayangan1_25.eachLayer(function(layer) {
+        layer_PosBayangan1_18.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PosBayangan1_25'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PosBayangan1_18'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2695,12 +2610,12 @@
               i++;
         });
         var i = 0;
-        layer_SpotView1_26.eachLayer(function(layer) {
+        layer_SpotView1_19.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_SpotView1_26'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_SpotView1_19'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2708,12 +2623,12 @@
               i++;
         });
         var i = 0;
-        layer_SpotView2_27.eachLayer(function(layer) {
+        layer_SpotView2_20.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_SpotView2_27'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_SpotView2_20'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2721,12 +2636,12 @@
               i++;
         });
         var i = 0;
-        layer_TitikPanorama1_28.eachLayer(function(layer) {
+        layer_TitikPanorama1_21.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_TitikPanorama1_28'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_TitikPanorama1_21'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2734,12 +2649,12 @@
               i++;
         });
         var i = 0;
-        layer_PosBayangan2_29.eachLayer(function(layer) {
+        layer_PosBayangan2_22.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PosBayangan2_29'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PosBayangan2_22'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2747,12 +2662,12 @@
               i++;
         });
         var i = 0;
-        layer_PosBayangan3_30.eachLayer(function(layer) {
+        layer_PosBayangan3_23.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PosBayangan3_30'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PosBayangan3_23'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2760,12 +2675,12 @@
               i++;
         });
         var i = 0;
-        layer_SpotView3_31.eachLayer(function(layer) {
+        layer_SpotView3_24.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_SpotView3_31'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_SpotView3_24'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2773,12 +2688,12 @@
               i++;
         });
         var i = 0;
-        layer_KawahTua_32.eachLayer(function(layer) {
+        layer_KawahTua_25.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_KawahTua_32'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_KawahTua_25'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2786,12 +2701,12 @@
               i++;
         });
         var i = 0;
-        layer_KawahLama_33.eachLayer(function(layer) {
+        layer_KawahLama_26.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_KawahLama_33'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_KawahLama_26'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2799,12 +2714,12 @@
               i++;
         });
         var i = 0;
-        layer_PanoramicPoint2_34.eachLayer(function(layer) {
+        layer_PanoramicPoint2_27.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PanoramicPoint2_34'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PanoramicPoint2_27'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2812,12 +2727,12 @@
               i++;
         });
         var i = 0;
-        layer_PanoramaPuncakAnakGnSoputan_35.eachLayer(function(layer) {
+        layer_PanoramaPuncakAnakGnSoputan_28.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PanoramaPuncakAnakGnSoputan_35'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PanoramaPuncakAnakGnSoputan_28'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -2825,27 +2740,27 @@
               i++;
         });
         var i = 0;
-        layer_PuncakAnakGnSoputan_36.eachLayer(function(layer) {
+        layer_PuncakAnakGnSoputan_29.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PuncakAnakGnSoputan_36'});
+            layer.bindTooltip((layer.feature.properties['name'] !== null?String('<div style="color: #323232; font-size: 10pt; font-weight: bold; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_PuncakAnakGnSoputan_29'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
               addLabel(layer, i);
               i++;
         });
-        resetLabels([layer_StartingPoint_20,layer_RegistrationPoint_21,layer_MataAir_22,layer_CampGround1_23,layer_PosBayangan1_25,layer_SpotView1_26,layer_SpotView2_27,layer_TitikPanorama1_28,layer_PosBayangan2_29,layer_PosBayangan3_30,layer_SpotView3_31,layer_KawahTua_32,layer_KawahLama_33,layer_PanoramicPoint2_34,layer_PanoramaPuncakAnakGnSoputan_35,layer_PuncakAnakGnSoputan_36]);
+        resetLabels([layer_StartingPoint_13,layer_RegistrationPoint_14,layer_MataAir_15,layer_CampGround1_16,layer_PosBayangan1_18,layer_SpotView1_19,layer_SpotView2_20,layer_TitikPanorama1_21,layer_PosBayangan2_22,layer_PosBayangan3_23,layer_SpotView3_24,layer_KawahTua_25,layer_KawahLama_26,layer_PanoramicPoint2_27,layer_PanoramaPuncakAnakGnSoputan_28,layer_PuncakAnakGnSoputan_29]);
         map.on("zoomend", function(){
-            resetLabels([layer_StartingPoint_20,layer_RegistrationPoint_21,layer_MataAir_22,layer_CampGround1_23,layer_PosBayangan1_25,layer_SpotView1_26,layer_SpotView2_27,layer_TitikPanorama1_28,layer_PosBayangan2_29,layer_PosBayangan3_30,layer_SpotView3_31,layer_KawahTua_32,layer_KawahLama_33,layer_PanoramicPoint2_34,layer_PanoramaPuncakAnakGnSoputan_35,layer_PuncakAnakGnSoputan_36]);
+            resetLabels([layer_StartingPoint_13,layer_RegistrationPoint_14,layer_MataAir_15,layer_CampGround1_16,layer_PosBayangan1_18,layer_SpotView1_19,layer_SpotView2_20,layer_TitikPanorama1_21,layer_PosBayangan2_22,layer_PosBayangan3_23,layer_SpotView3_24,layer_KawahTua_25,layer_KawahLama_26,layer_PanoramicPoint2_27,layer_PanoramaPuncakAnakGnSoputan_28,layer_PuncakAnakGnSoputan_29]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_StartingPoint_20,layer_RegistrationPoint_21,layer_MataAir_22,layer_CampGround1_23,layer_PosBayangan1_25,layer_SpotView1_26,layer_SpotView2_27,layer_TitikPanorama1_28,layer_PosBayangan2_29,layer_PosBayangan3_30,layer_SpotView3_31,layer_KawahTua_32,layer_KawahLama_33,layer_PanoramicPoint2_34,layer_PanoramaPuncakAnakGnSoputan_35,layer_PuncakAnakGnSoputan_36]);
+            resetLabels([layer_StartingPoint_13,layer_RegistrationPoint_14,layer_MataAir_15,layer_CampGround1_16,layer_PosBayangan1_18,layer_SpotView1_19,layer_SpotView2_20,layer_TitikPanorama1_21,layer_PosBayangan2_22,layer_PosBayangan3_23,layer_SpotView3_24,layer_KawahTua_25,layer_KawahLama_26,layer_PanoramicPoint2_27,layer_PanoramaPuncakAnakGnSoputan_28,layer_PuncakAnakGnSoputan_29]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_StartingPoint_20,layer_RegistrationPoint_21,layer_MataAir_22,layer_CampGround1_23,layer_PosBayangan1_25,layer_SpotView1_26,layer_SpotView2_27,layer_TitikPanorama1_28,layer_PosBayangan2_29,layer_PosBayangan3_30,layer_SpotView3_31,layer_KawahTua_32,layer_KawahLama_33,layer_PanoramicPoint2_34,layer_PanoramaPuncakAnakGnSoputan_35,layer_PuncakAnakGnSoputan_36]);
+            resetLabels([layer_StartingPoint_13,layer_RegistrationPoint_14,layer_MataAir_15,layer_CampGround1_16,layer_PosBayangan1_18,layer_SpotView1_19,layer_SpotView2_20,layer_TitikPanorama1_21,layer_PosBayangan2_22,layer_PosBayangan3_23,layer_SpotView3_24,layer_KawahTua_25,layer_KawahLama_26,layer_PanoramicPoint2_27,layer_PanoramaPuncakAnakGnSoputan_28,layer_PuncakAnakGnSoputan_29]);
         });
         </script>
     </body>
